@@ -1,0 +1,30 @@
+
+<body>
+  <header>
+    <div class="menu-btn" >☰</div>
+    <nav class="hidden">
+      <a href="#home">Головна</a>
+      <a href="#about">Про мене</a>
+      <a href="#skills">Навички</a>
+      <a href="#projects">Проекти</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Контакти</h2>
+    <form>
+      <input type="text" placeholder="Ваше ім’я" required>
+      <input type="email" placeholder="Ваш Email" required>
+      <textarea placeholder="Ваше повідомлення" required></textarea>
+      <button type="submit">Відправити</button>
+    </form>
+  </section>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.onclick = () => menu.classList.toggle('hidden');
+  </script>
+</body>
+</html>
